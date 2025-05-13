@@ -10,8 +10,8 @@ message Confirm {}
 
 trait DelayedUpgradable with Upgradable {
     owner: Address;
-    _version: Int;
-    // _version: Int as uint32;
+    // _version: Int;
+    _version: Int as uint32;
     initiatedAt: Int;
     upgradeInfo: Upgrade;
 
@@ -36,9 +36,7 @@ trait DelayedUpgradable with Upgradable {
 
 trait Upgradable with Ownable {
     owner: Address;
-    // _version: Int as uint32;
-    _version: Int;
-
+    _version: Int as uint32;
 
     receive(msg: Upgrade) {
         let ctx = context();
