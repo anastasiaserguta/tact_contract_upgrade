@@ -58,11 +58,11 @@ contract ContractTestUpgrade with Deployable, Ownable, DelayedUpgradable {
         return self.id;
     }
 
-    get fun newID(): Int {
+    get fun new_ID(): Int {
         return self.newID;
     }
 
-    get fun randomNumber(): Int {
+    get fun random_number(): Int {
         return self.randomNumber;
     }
 }
