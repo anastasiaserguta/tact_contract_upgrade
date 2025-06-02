@@ -6,7 +6,7 @@
         "start": "blueprint run",
         "build": "blueprint build",
         "test": "jest --verbose",
-        "lint": "misti --min-severity medium tact.config.json"
+        "lint": "npx blueprint misti --blueprint-project ."
     },
     "devDependencies": {
         "@nowarp/misti": "^0.8.3",
