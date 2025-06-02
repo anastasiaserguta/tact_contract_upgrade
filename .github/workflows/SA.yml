@@ -35,4 +35,4 @@ jobs:
         run: yarn install
 
       - name: Run Misti
-        run: yarn misti --min-severity medium /path/to/your/tact.config.json
+        run: npm run lint
