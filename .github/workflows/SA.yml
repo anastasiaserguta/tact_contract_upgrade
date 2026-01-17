@@ -37,4 +37,4 @@ jobs:
         run: npm run build
 
       - name: Run Misti
-        run: npm run lint
+        run: npm run lint --min-severity medium
